@@ -1,0 +1,35 @@
+{
+  "name": "sncmder",
+  "version": "0.0.1",
+  "description": "A NodeJS Library for developing and administrating on Service-Now Instances.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mak42/sncmder.git"
+  },
+  "keywords": [
+    "nodejs",
+    "service-now"
+  ],
+  "author": "Martin Kirchweger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mak42/sncmder/issues"
+  },
+  "homepage": "https://github.com/mak42/sncmder#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "easy-table": "^1.1.1",
+    "html2plaintext": "^2.0.1",
+    "keytar": "^4.2.0",
+    "lodash": "^4.17.5",
+    "querystring": "^0.2.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "tough-cookie-filestore": "0.0.1",
+    "xml2js": "^0.4.19"
+  }
+}

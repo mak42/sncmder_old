@@ -6,7 +6,7 @@ var SnRequest = require("./lib/sn-request");
     var loginData = JSON.parse(loginDataStr);
 
     var $sn = new SnRequest(loginData.host);
-    console.log(await $sn.login(loginData.user, loginData.pass));
+    console.log(await $sn.login());
     console.log(await $sn.JSONv2API("incident").getRecords("active=true"));
     /*console.log(await $sn.evalScript("gs.debug('testing')", "global"));
     console.log(await $sn.glideAjax("HelloWorldAjax", "sayHello"));

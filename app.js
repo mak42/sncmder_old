@@ -7,7 +7,11 @@ var SnRequest = require("./lib/sn-request");
 
     var $sn = new SnRequest(loginData.host);
     console.log(await $sn.login());
-    console.log(await $sn.JSONv2API("incident").getRecords("active=true"));
+    var statusCode = await $sn.uploadXml("C:\\Users\\mkirchweger.SOFTPOINT\\Downloads\\sys_script_include_3c5e07cb37ae7a00f60a86e654990ecc.xml");
+    console.log(statusCode);
+    //console.log(await $sn.JSONv2API("incident").getRecords("active=true"));
+
+    
     /*console.log(await $sn.evalScript("gs.debug('testing')", "global"));
     console.log(await $sn.glideAjax("HelloWorldAjax", "sayHello"));
     console.log(await $sn.getUpdateSets());

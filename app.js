@@ -1,4 +1,5 @@
 //module commander and commander-completion für sncmder-cli verwenden
+//or use of https://vorpal.js.org/
 var SnRequest = require("./lib/sn-request");
 
 (async function() {

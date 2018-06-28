@@ -11,11 +11,15 @@ var SnRequest = require("./lib/sn-request");
     //console.log(await $sn.clearServerCache());
     //console.log(await $sn.checkoutWorkflow("57dd99a087533200277eff0b84e3ec81"));
     //console.log(await $sn.publishWorkflow("403f5f184fc793006e149acf9310c793"));
-    //var statusCode = await $sn.uploadXml("C:\\Users\\mkirchweger.SOFTPOINT\\Downloads\\sys_script_include_3c5e07cb37ae7a00f60a86e654990ecc.xml");
+    /*var statusCode = await $sn.uploadXml("C:/Users/mak/Downloads/Add_to_Update_Set_v2.6.xml");
+    console.log(statusCode);*/
+    console.log(await $sn.previewUpdateSet("7449a343d91113006d1e5f1622221298"));
+    console.log(await $sn.validateCommitRemoteUpdateSet("7449a343d91113006d1e5f1622221298"));
+    console.log(await $sn.commitUpdateSet("7449a343d91113006d1e5f1622221298"));
 
     //$sn.exportXml("sys_script_include", "3c5e07cb37ae7a00f60a86e654990ecc", "C:\\Users\\mkirchweger.SOFTPOINT\\Downloads");
     //$sn.createLogTimestampDictionary();
-    $sn.getTableSchema("incident", "C:\\Users\\mkirchweger.SOFTPOINT\\Downloads");
+    //$sn.getTableSchema("incident", "C:\\Users\\mkirchweger.SOFTPOINT\\Downloads");
 
     //console.log(statusCode);
     //console.log(await $sn.JSONv2API("incident").getRecords("active=true"));

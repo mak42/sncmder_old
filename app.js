@@ -13,9 +13,11 @@ var SnRequest = require("./lib/sn-request");
     //console.log(await $sn.publishWorkflow("403f5f184fc793006e149acf9310c793"));
     /*var statusCode = await $sn.uploadXml("C:/Users/mak/Downloads/Add_to_Update_Set_v2.6.xml");
     console.log(statusCode);*/
-    console.log(await $sn.previewUpdateSet("7449a343d91113006d1e5f1622221298"));
-    console.log(await $sn.validateCommitRemoteUpdateSet("7449a343d91113006d1e5f1622221298"));
-    console.log(await $sn.commitUpdateSet("7449a343d91113006d1e5f1622221298"));
+    //console.log(await $sn.previewUpdateSet("7449a343d91113006d1e5f1622221298"));
+    //console.log(await $sn.validateCommitRemoteUpdateSet("7449a343d91113006d1e5f1622221298"));
+    //console.log(await $sn.commitUpdateSet("7449a343d91113006d1e5f1622221298"));
+
+    await $sn.exportUpdateSetToXml("94a349a8db031300ffe55901cf9619b8", "C:\\Users\\mak\\Downloads");
 
     //$sn.exportXml("sys_script_include", "3c5e07cb37ae7a00f60a86e654990ecc", "C:\\Users\\mkirchweger.SOFTPOINT\\Downloads");
     //$sn.createLogTimestampDictionary();

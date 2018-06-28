@@ -7,8 +7,16 @@ var SnRequest = require("./lib/sn-request");
 
     var $sn = new SnRequest(loginData.host);
     console.log(await $sn.login());
-    var statusCode = await $sn.uploadXml("C:\\Users\\mkirchweger.SOFTPOINT\\Downloads\\sys_script_include_3c5e07cb37ae7a00f60a86e654990ecc.xml");
-    console.log(statusCode);
+    //console.log(await $sn.clearServerCache());
+    //console.log(await $sn.checkoutWorkflow("57dd99a087533200277eff0b84e3ec81"));
+    //console.log(await $sn.publishWorkflow("403f5f184fc793006e149acf9310c793"));
+    //var statusCode = await $sn.uploadXml("C:\\Users\\mkirchweger.SOFTPOINT\\Downloads\\sys_script_include_3c5e07cb37ae7a00f60a86e654990ecc.xml");
+
+    //$sn.exportXml("sys_script_include", "3c5e07cb37ae7a00f60a86e654990ecc", "C:\\Users\\mkirchweger.SOFTPOINT\\Downloads");
+    //$sn.createLogTimestampDictionary();
+    $sn.getTableSchema("incident", "C:\\Users\\mkirchweger.SOFTPOINT\\Downloads");
+
+    //console.log(statusCode);
     //console.log(await $sn.JSONv2API("incident").getRecords("active=true"));
 
     

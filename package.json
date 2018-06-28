@@ -27,13 +27,11 @@
     "html2plaintext": "^2.0.1",
     "keytar": "^4.2.0",
     "lodash": "^4.17.5",
+    "pretty-data": "^0.40.0",
     "querystring": "^0.2.0",
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5",
     "tough-cookie": "^2.2.2",
     "xml2js": "^0.4.19"
-  },
-  "devDependencies": {
-    "@types/request-promise-native": "^1.0.15"
   }
 }
